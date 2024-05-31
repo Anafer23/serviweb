@@ -5,28 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios de Desarrollo Web</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="formulario.html">
-    
-    <a href="formulario.html" class="Contacto"></a>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">Dtwam</div>
-            <img src="imagenes/logo.png" alt="">
+            <img src="imagenes/logo.png" alt="Logo">
             <nav>
                 <ul>
                     <li><a href="#services">Servicios</a></li>
                     <li><a href="#portfolio">Portafolio</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="formulario.html">Contacto</a></li>
                 </ul>
             </nav>
-           
-            <a href="#" class="cta" onclick="scrollToForm()">Solicitar Presupuesto</a>
-            
+            <a href="formulario.html" class="cta">Solicitar Presupuesto</a>
         </div>
-        
-       
     </header>
 
     <section id="intro">
@@ -91,11 +84,9 @@
                         <p>Descripción del Proyecto 2</p>
                     </a>
                 </div>
-                <!-- Puedes agregar más elementos del portafolio aquí -->
             </div>
         </div>
     </section>
-
 
     <section id="process">
         <div class="container">
@@ -128,25 +119,16 @@
     <section id="cta">
         <div class="container">
             <h2 class="animate-fadein">¿Listo para Comenzar?</h2>
-            <a href="#contact" class="btn animate-bounce">Contáctanos Hoy</a>
+            <a href="formulario.html" class="btn animate-bounce">Contáctanos Hoy</a>
         </div>
     </section>
     
-    
-
     <footer>
         <div class="container">
             <p>© 2024 Dwatm. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <script>
-        // JavaScript para manejar la redirección
-        document.getElementById('contact-link').addEventListener('click', function(event) {
-            event.preventDefault();
-            window.location.href = 'formulario.html#contacto';
-        });
-    </script>
 </body>
 </html>
+
 
