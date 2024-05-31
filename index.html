@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Desarrollo Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="formulario.html">
+    
+    <a href="formulario.html" class="Contacto"></a>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Dtwam</div>
+            <img src="imagenes/logo.png" alt="">
+            <nav>
+                <ul>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+           
+            <a href="#" class="cta" onclick="scrollToForm()">Solicitar Presupuesto</a>
+            
+        </div>
+        
+       
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <h1 class="animate-fadein">Transforma tu Presencia Digital con Nuestro Desarrollo Web Profesional</h1>
+            <p class="animate-slidein">Ofrecemos soluciones personalizadas que llevan tu negocio al siguiente nivel</p>
+            <a href="#services" class="btn animate-bounce">Descubre Más</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="animate-fadein">Nuestros Servicios</h2>
+            <div class="services">
+                <div class="service-item animate-slidein">
+                    <h3>Desarrollo de Páginas Web Personalizadas</h3>
+                    <p>Creamos sitios web a medida que reflejan tu marca y cumplen con tus objetivos.</p>
+                </div>
+                <div class="service-item animate-slidein">
+                    <h3>Diseño Responsivo</h3>
+                    <p>Aseguramos que tu sitio web se vea genial en todos los dispositivos.</p>
+                </div>
+                <div class="service-item animate-slidein">
+                    <h3>Comercio Electrónico</h3>
+                    <p>Desarrollamos tiendas online que impulsan tus ventas.</p>
+                </div>
+                <div class="service-item animate-slidein">
+                    <h3>Optimización SEO</h3>
+                    <p>Mejoramos tu visibilidad en motores de búsqueda.</p>
+                </div>
+                <div class="service-item animate-slidein">
+                    <h3>Mantenimiento y Soporte</h3>
+                    <p>Ofrecemos soporte continuo para mantener tu sitio web en óptimas condiciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="animate-fadein">Lo que Dicen Nuestros Clientes</h2>
+            <div class="testimonial-item animate-slidein">
+                <p>"El equipo transformó nuestra presencia online y aumentó nuestras ventas."</p>
+                <h4>Juan Pérez, CEO de Empresa XYZ</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="animate-fadein">Nuestros Proyectos Recientes</h2>
+            <div class="portfolio">
+                <div class="portfolio-item animate-slidein">
+                    <a href="https://anafer23.github.io/Portfolio/" target="_blank">
+                        <h3>Proyecto 1</h3>
+                        <p>Descripción del Proyecto 1</p>
+                    </a>
+                </div>
+                <div class="portfolio-item animate-slidein">
+                    <a href="http://127.0.0.1:5500/mi%20primera%20web%20con%20ChatGPT/index.html" target="_blank">
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción del Proyecto 2</p>
+                    </a>
+                </div>
+                <!-- Puedes agregar más elementos del portafolio aquí -->
+            </div>
+        </div>
+    </section>
+
+
+    <section id="process">
+        <div class="container">
+            <h2 class="animate-fadein">Nuestro Proceso</h2>
+            <div class="process-steps">
+                <div class="process-step animate-slidein">
+                    <h3>Consulta Inicial</h3>
+                    <p>Entendemos tus necesidades y objetivos.</p>
+                </div>
+                <div class="process-step animate-slidein">
+                    <h3>Planificación</h3>
+                    <p>Diseñamos una estrategia personalizada.</p>
+                </div>
+                <div class="process-step animate-slidein">
+                    <h3>Desarrollo</h3>
+                    <p>Creamos y probamos tu sitio web.</p>
+                </div>
+                <div class="process-step animate-slidein">
+                    <h3>Lanzamiento</h3>
+                    <p>Lanzamos tu sitio web y monitoreamos su desempeño.</p>
+                </div>
+                <div class="process-step animate-slidein">
+                    <h3>Mantenimiento</h3>
+                    <p>Proveemos soporte continuo y mejoras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <div class="container">
+            <h2 class="animate-fadein">¿Listo para Comenzar?</h2>
+            <a href="#contact" class="btn animate-bounce">Contáctanos Hoy</a>
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Dwatm. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para manejar la redirección
+        document.getElementById('contact-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'formulario.html#contacto';
+        });
+    </script>
+</body>
+</html>
+

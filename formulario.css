@@ -1,0 +1,80 @@
+body {
+  margin: 1.5em;
+  background-color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Estilos del encabezado */
+header {
+  display: flex;
+ 
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo_seccion {
+  position: relative;
+  font-size: 40px;
+  color: #003750;
+  text-align: center;
+}
+
+/* Estilos del contenedor del formulario */
+.form_contenedor {
+  max-width: 500px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+  padding: 20px; /* Espaciado interno */
+  border: 5px solid #0056b3; /* Borde del contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: #fff; /* Fondo blanco */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Espacio entre cada grupo de formulario */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px; /* Espacio debajo de las etiquetas */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%; /* Ancho completo de los inputs */
+  padding: 8px; /* Espaciado interno */
+  border: 1px solid #8c8dd6; /* Borde de los inputs */
+  border-radius: 4px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+
+textarea {
+  resize: vertical; /* Permitir redimensionar verticalmente */
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px; /* Espaciado interno */
+  border: 1px solid #0a4752; /* Borde de los botones */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #8c81ce; /* Fondo del botón */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Puntero de mano */
+}
+
+button:hover {
+  background-color: rgba(161, 21, 177, 0.067); /* Fondo al pasar el mouse */
+}

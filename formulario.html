@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Desarrollo Web</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html"><i class="fa-solid- fa-heart"></i></a>
+        </nav>
+    </header>   
+
+    <section>
+        <h2 class="titulo_seccion">Contacto</h2>
+        <div class="form_contenedor">
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>   
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>   
+
+                <div class="form-group">
+                    <label for="service">Servicio de Interés</label>
+                    <select id="service" name="service" required>
+                        <option value="">Seleccione un servicio</option>
+                        <option value="web-development">Desarrollo Web</option>
+                        <option value="responsive-design">Diseño Responsivo</option>
+                        <option value="e-commerce">Comercio Electrónico</option>
+                        <option value="seo">Optimización SEO</option>
+                        <option value="maintenance">Mantenimiento y Soporte</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <div class="btn-group">
+                    <button type="submit" class="btn">Enviar</button>
+                    <button type="reset" class="btn">Limpiar</button>
+                </div>
+            </form>
+        </div>    
+    </section>
+
+</body>
+</html>
