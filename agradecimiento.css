@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: #792bad;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: rgb(22, 121, 91);
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #77d7d7;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+section p {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #555;
+}
