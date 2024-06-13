@@ -10,14 +10,14 @@
 
     <header>
         <nav>
-            <a href="index.html"><i class="fa-solid- fa-heart"></i></a>
+            <a href="index.html"><i class="fa-solid fa-heart"></i> Volver a la Página Principal</a>
         </nav>
     </header>   
 
     <section>
         <h2 class="titulo_seccion">Contacto</h2>
         <div class="form_contenedor">
-            <form>
+            <form id="contactForm">
                 <div class="form-group">
                     <label for="name">Nombre</label>
                     <input type="text" id="name" name="name" required>
@@ -58,5 +58,30 @@
         </div>    
     </section>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                // Validación de los campos del formulario
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const service = document.getElementById('service').value;
+                const message = document.getElementById('message').value.trim();
+
+                if (!name || !email || !service || !message) {
+                    alert('Por favor, complete todos los campos obligatorios.');
+                    return;
+                }
+
+                // Simulación del envío del formulario
+                alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+
+                // Redireccionar a una página de agradecimiento
+                window.location.href = "agradecimientos.html";
+            });
+        });
+    </script>
 </body>
 </html>
